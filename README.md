@@ -242,8 +242,8 @@ No se proporciona video. Gracias
 
 ## Autor
 
-* **[Andrés Felipe Rodríguez Chaparro](https://www.linkedin.com/in/andres-felipe-rodriguez-chaparro-816ab527a/)** - [20042000](https://github.com/20042000)
+* **[Manuel Felipe Barrera](https://github.com/ManuelB16)**
 
 ## Licencia
-**©** Andrés Felipe Rodríguez Chaparro. Estudiante de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
+**©** Manuel Felipe Barrera. Estudiante de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
 
