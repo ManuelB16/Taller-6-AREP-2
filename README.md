@@ -22,33 +22,34 @@ En este laboratorio vamos a garantizar unos criterios de seguridad para porteger
 
 ## Disposición del directorio de archivos 🗂️
 
-´´´
+### 🗂️ Disposición del directorio de archivos 📁
 
+```text
 LAB5AREP/
 ├── src/
-│   └── main/
-│       ├── java/
-│       │   └── edu/eci/arep/lab5arep/Backend/
-│       │       ├── controller/
-│       │       │   └── PropertyController.java
-│       │       ├── exception/
-│       │       │   └── ResourceNotFoundException.java
-│       │       ├── model/
-│       │       │   └── Property.java
-│       │       ├── repository/
-│       │       │   └── PropertyRepository.java
-│       │       ├── service/
-│       │       │   └── PropertyService.java
-│       │       └── Server.java
-│       ├── resources/
-│       │   ├── www/
-│       │   │   ├── agregar.html
-│       │   │   ├── buscar.html
-│       │   │   ├── editar.html
-│       │   │   └── index.html
-│       │   ├── script.js
-│       │   ├── styles.css
-│       │   └── application.properties
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── edu/eci/arep/lab5arep/Backend/
+│   │   │       ├── controller/
+│   │   │       │   └── PropertyController.java
+│   │   │       ├── exception/
+│   │   │       │   └── ResourceNotFoundException.java
+│   │   │       ├── model/
+│   │   │       │   └── Property.java
+│   │   │       ├── repository/
+│   │   │       │   └── PropertyRepository.java
+│   │   │       ├── service/
+│   │   │       │   └── PropertyService.java
+│   │   │       └── Server.java
+│   │   └── resources/
+│   │       ├── www/
+│   │       │   ├── agregar.html
+│   │       │   ├── buscar.html
+│   │       │   ├── editar.html
+│   │       │   └── index.html
+│   │       ├── script.js
+│   │       ├── styles.css
+│   │       └── application.properties
 ├── test/
 ├── target/
 ├── .gitignore
@@ -56,8 +57,7 @@ LAB5AREP/
 ├── docker-compose.yml
 ├── Dockerfile
 └── pom.xml
-
-´´´
+```
 ---
 
 ### Arquitectura 💻
