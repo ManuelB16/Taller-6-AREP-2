@@ -98,46 +98,60 @@ Se organiza en **tres capas principales**, cada una con responsabilidades bien d
   Almacena los datos de usuarios, propiedades y demás entidades del sistema, garantizando integridad y disponibilidad.
 
 
-### Componentes 
-1) Cliente WEB
-   * Se comunica con el backend a traves de AJAX
-   * se sirve a traves del servidor Apache
-   * el servidor Apache se ubica en una Instancias EC2
-   * Configurado con TLS (Let's Encrypt) para conexiones HTTPS seguras.
-   * Servirá el frontend desde /var/www/html.
-2) Spring boot backend
-   * Implementado en una instancia EC2 separada.
-   * Expondrá APIs REST en el puerto 8080.
-   * Se conectará a la base de datos MySQL.
-   * Configurado con HTTPS mediante un certificado PKCS12 (.p12).
-3) Base de datos MySql
-   * Base de datos dedicada en otra instancia EC2.
-   * Solo accesible desde el backend (usando Security Groups).
+### 🧩 Componentes
 
-### Estrategias de seguridad en AWS
-1)  Seguridad en la Red
-   * Apache
-     * Permite tráfico HTTP/HTTPS (80 y 443) desde cualquier IP (0.0.0.0/0).
-     * No permite conexiones directas desde el backend o la base de datos.
-    
-   * Backend
-     * Solo permite conexiones en el puerto 8080 desde el servidor Apache.
-     * Acceso restringido por Security Group (solo desde el SG del frontend).
-       
-   * Base de datos
-     * Solo permite conexiones en el puerto 3306 desde el backend.
-     * No tiene IP pública (solo accesible dentro de la VPC de AWS).
-    
- 2) Certificados SSL/TLS
-    * Apache: Let’s Encrypt para HTTPS (certbot).
-    * Backend:  Certificado .p12 generado con keytool para tráfico seguro en 8443
- 3) Autenticación
-    * Spring Security: Configurado con credenciales en application.properties, el cual se logea dentro de un formulario html en el front
+#### 1️⃣ Cliente Web
+- Se comunica con el backend a través de **AJAX**.  
+- Es servido mediante un **servidor Apache**.  
+- El servidor Apache se aloja en una **instancia EC2**.  
+- Configurado con **TLS (Let's Encrypt)** para conexiones seguras mediante **HTTPS**.  
+- El frontend se sirve desde la ruta: `/var/www/html`.
+
+#### 2️⃣ Spring Boot Backend
+- Implementado en una **instancia EC2** separada.  
+- Expone **APIs REST** en el puerto **8080**.  
+- Se conecta con la **base de datos MySQL**.  
+- Configurado con **HTTPS** utilizando un certificado **PKCS12 (.p12)**.
+
+#### 3️⃣ Base de Datos MySQL
+- Ejecutada en una **instancia EC2 dedicada**.  
+- Solo accesible desde el **backend**, controlado mediante **Security Groups** de AWS.
+
+### 🛡️ Estrategias de Seguridad en AWS
+
+#### 1️⃣ Seguridad en la Red
+
+- **Apache**
+  - Permite tráfico **HTTP/HTTPS (puertos 80 y 443)** desde cualquier IP (`0.0.0.0/0`).  
+  - No permite conexiones directas desde el backend o la base de datos.
+
+- **Backend**
+  - Solo acepta conexiones en el **puerto 8080** provenientes del servidor Apache.  
+  - Acceso restringido mediante **Security Group**, limitado al SG del frontend.
+
+- **Base de Datos**
+  - Acepta conexiones únicamente en el **puerto 3306** desde el backend.  
+  - No posee IP pública, siendo accesible solo dentro de la **VPC de AWS**.
+
+---
+
+#### 2️⃣ Certificados SSL/TLS
+
+- **Apache:** Configurado con **Let’s Encrypt (Certbot)** para conexiones HTTPS seguras.  
+- **Backend:** Utiliza un certificado **PKCS12 (.p12)** generado con `keytool` para tráfico seguro en el puerto **8443**.
+
+---
+
+#### 3️⃣ Autenticación
+
+- **Spring Security:** Configurado con credenciales definidas en `application.properties`.  
+  El inicio de sesión se realiza mediante un **formulario HTML** en el frontend, garantizando autenticación segura.
+
 ### Instalación e instrucciones de despliegue 🚀​🌐​
 
 1) Debemos clonar el repositorio
 ```
-https://github.com/andres3455/Lab6_Arep.git
+git clone https://github.com/ManuelB16/Taller-6-AREP-2
 ```
 2) Una vez clonamos, accedemos al directorio
 ```
