@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Propiedad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Editar Propiedad</h1>
+
+    <ul id="edit-list"></ul>
+
+    <form id="edit-form">
+        <input type="hidden" id="edit-id">
+        <input type="text" id="edit-address" placeholder="Dirección" required>
+        <input type="number" id="edit-price" placeholder="Precio" required>
+        <input type="number" id="edit-size" placeholder="Tamaño (m²)" required>
+        <textarea id="edit-description" placeholder="Descripción" required></textarea>
+        <button type="submit">Guardar Cambios</button>
+    </form>
+
+    <form id="navegation">
+        <button type="button" onclick="location.href='Buscar.html'">Buscar Propiedad</button>
+        <button type="button" onclick="location.href='agregar.html'">Agregar Propiedad</button>
+        <button type="button" onclick="location.href='home.html'">Volver al Inicio</button>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Propiedad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Buscar Propiedad</h1>
+
+    <input type="text" id="search" placeholder="Buscar por dirección">
+    <button type="button" onclick="buscarPropiedad()">Buscar</button> <!-- Nuevo botón de búsqueda -->
+    <ul id="search-results"></ul>
+
+    <form id="navegation">
+        <button type="button" onclick="location.href='editar.html'">Editar Propiedad</button>
+        <button type="button" onclick="location.href='agregar.html'">Agregar Propiedad</button>
+        <button type="button" onclick="location.href='home.html'">Volver al Inicio</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

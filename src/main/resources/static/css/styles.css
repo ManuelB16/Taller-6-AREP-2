@@ -1,0 +1,171 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #5e5db1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* TITULOS */
+h1, h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* BOTONES DE NAVEGACIÓN */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-buttons button {
+  background: #d68111;
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background: #b36c0c;
+  transform: scale(1.1);
+}
+
+/* FORMULARIOS */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  width: 100%;
+  background: rgb(87, 94, 97);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+}
+
+input,
+textarea,
+button {
+  margin: 12px 0;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #d68111;
+  box-shadow: 0 0 7px #d68111;
+}
+
+/* BOTÓN PRINCIPAL */
+button {
+  background: #d68111;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #b36c0c;
+  transform: scale(1.05);
+}
+
+/* LISTA DE PROPIEDADES */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* CONTENEDOR DE BOTONES DENTRO DE CADA PROPIEDAD */
+.property-buttons {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 220px;
+}
+
+/* BOTÓN VER DESCRIPCIÓN */
+.view-btn {
+  flex: 1;
+  background: #d28b00;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.view-btn:hover {
+  background: #b37400;
+  transform: scale(1.05);
+}
+
+/* BOTÓN ELIMINAR */
+.delete-btn {
+  flex: 1;
+  background: #dc3545;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* Lab 6*/
+.login-container {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px gray;
+  border-radius: 5px;
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+}
+

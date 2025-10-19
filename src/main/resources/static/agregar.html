@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar Propiedad</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Agregar Propiedad</h1>
+
+    <form id="property-form">
+      <input type="text" id="address" placeholder="Dirección" required />
+      <input type="number" id="price" placeholder="Precio" required />
+      <input type="number" id="size" placeholder="Tamaño (m²)" required />
+      <textarea id="description" placeholder="Descripción" required></textarea>
+      <button type="submit">Agregar</button>
+    </form>
+
+    <form id="navigation">
+      <button type="button" onclick="location.href='editar.html'">
+        Editar Propiedad
+      </button>
+      <button type="button" onclick="location.href='buscar.html'">
+        Buscar Propiedad
+      </button>
+      <button type="button" onclick="location.href='home.html'">
+        Volver al Inicio
+      </button>
+    </form>
+
+    <h2>Lista de propiedades</h2>
+    <ul id="property-list">
+    </ul>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
