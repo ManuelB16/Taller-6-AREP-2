@@ -22,8 +22,6 @@ En este laboratorio vamos a garantizar unos criterios de seguridad para porteger
 
 ## Disposición del directorio de archivos 🗂️
 
-### 🗂️ Disposición del directorio de archivos 📁
-
 ```text
 LAB5AREP/
 ├── src/
@@ -58,6 +56,26 @@ LAB5AREP/
 ├── Dockerfile
 └── pom.xml
 ```
+
+| Carpeta / Archivo                                                                      | Descripción                                          |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| `src/main/java/edu/eci/arep/lab5arep/Backend/controller/PropertyController.java`       | Controlador principal del CRUD de propiedades        |
+| `src/main/java/edu/eci/arep/lab5arep/Backend/exception/ResourceNotFoundException.java` | Manejo de excepciones para recursos no encontrados   |
+| `src/main/java/edu/eci/arep/lab5arep/Backend/model/Property.java`                      | Entidad que representa una propiedad inmobiliaria    |
+| `src/main/java/edu/eci/arep/lab5arep/Backend/repository/PropertyRepository.java`       | Interfaz de persistencia con JPA                     |
+| `src/main/java/edu/eci/arep/lab5arep/Backend/service/PropertyService.java`             | Lógica de negocio para el manejo de propiedades      |
+| `src/main/java/edu/eci/arep/lab5arep/Backend/Server.java`                              | Punto de entrada del backend con Spring Boot         |
+| `src/main/resources/www/*.html`                                                        | Vistas del frontend (agregar, buscar, editar, index) |
+| `src/main/resources/script.js`                                                         | Lógica de interacción del frontend con el backend    |
+| `src/main/resources/styles.css`                                                        | Estilos del frontend                                 |
+| `src/main/resources/application.properties`                                            | Configuración del backend (DB, puertos, etc.)        |
+| `docker-compose.yml`                                                                   | Configuración para despliegue con Docker             |
+| `Dockerfile`                                                                           | Imagen del backend                                   |
+| `pom.xml`                                                                              | Dependencias y configuración del proyecto Maven      |
+| `.gitignore`, `.gitattributes`                                                         | Archivos de control de Git                           |
+| `test/`, `target/`                                                                     | Carpeta de pruebas y compilación                     |
+
+
 ---
 
 ### Arquitectura 💻
