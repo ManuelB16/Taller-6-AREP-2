@@ -162,11 +162,13 @@ cd Lab6_Arep
 
 Configuracion del aplication properties
 
-![image](https://github.com/user-attachments/assets/4a9f2ab7-55c4-4e58-ac2d-490502e81879)
+<img width="1510" height="417" alt="image" src="https://github.com/user-attachments/assets/f0e2b99f-04a3-414f-9c38-046f68b9ad68" />
+
 
 Se configuro un dominio sobre las ips publicas de las intancias en una aplicacion llamada DUCKDNS
 
-![Captura de pantalla 2025-03-13 170116](https://github.com/user-attachments/assets/f0da8e6a-ab70-49b7-91d7-47ebcb18f502)
+<img width="843" height="312" alt="image" src="https://github.com/user-attachments/assets/3cbebdc6-ad3f-42d9-8154-6495f4e13c14" />
+
 
 se hizo una prueba en local, para garantizar que todo estuviera funcionando correctamente antes de realizar el despliegue
 
