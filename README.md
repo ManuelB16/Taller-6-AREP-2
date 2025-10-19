@@ -80,13 +80,23 @@ LAB5AREP/
 
 ### Arquitectura 💻
 
-Esta arquitectura implementa una aplicación web segura y escalable en AWS, separando la lógica en tres capas principales:
+### 💻 Arquitectura del Sistema
 
-* Servidor Apache (Frontend): Sirve los archivos estáticos (HTML, CSS, JS) al cliente.
+La aplicación está diseñada bajo una arquitectura **segura, modular y escalable**, desplegada en **AWS**.  
+Se organiza en **tres capas principales**, cada una con responsabilidades bien definidas:
 
-* Spring Boot (Backend): Expone APIs REST para la lógica del negocio y la base de datos.
+- **🖥️ Servidor Apache (Frontend):**  
+  Encargado de servir los archivos estáticos (**HTML, CSS y JavaScript**) al cliente.  
+  Proporciona la interfaz de usuario y gestiona la comunicación con el backend mediante solicitudes HTTP seguras (HTTPS).
 
-* Base de Datos MySQL: Almacena la información de la aplicación.
+- **⚙️ Spring Boot (Backend):**  
+  Implementa la lógica de negocio y expone **APIs RESTful** para las operaciones del sistema.  
+  Procesa las peticiones del frontend, se conecta con la base de datos y aplica medidas de seguridad como autenticación y cifrado.
+
+- **🗄️ Base de Datos MySQL:**  
+  Gestiona la persistencia de la información.  
+  Almacena los datos de usuarios, propiedades y demás entidades del sistema, garantizando integridad y disponibilidad.
+
 
 ### Componentes 
 1) Cliente WEB
